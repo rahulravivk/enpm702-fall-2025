@@ -12,7 +12,7 @@
 #include <iostream>
 
 /**
- * @brief This is the Mainnn function
+ * @brief This is the Main function
  * 
  * @return int 
  */
