@@ -20,4 +20,5 @@ int main() {
   std::cout << "Hello, from enpm702_fall2025!\n";
   std::cout << "this is my first line with keyboard shortcut zz enter!\n";
   std::cout << "this my code with shortcut ctrl shift K\n";
+ return 0;
 }

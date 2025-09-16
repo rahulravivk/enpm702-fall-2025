@@ -11,10 +11,8 @@ int main() {
     //==============
     //======== 1
     //==============
-    std::cout << "hello, world\n";
+    std::cout << "hello, world1\n";
     // undefined_function();
-    return 0;
-
     //==============
     //======== 2
     //==============
@@ -28,16 +26,16 @@ int main() {
     //==============
     //======== 3
     //==============
-    //     int number = 20;
-    //     std::cout << sizeof(number) << '\n'; // 4 bytes on my machine
-    //     std::cout << sizeof(int) << '\n';    // 4 bytes on my machine
+     //int number = 20;
+     //std::cout << sizeof(number) << '\n'; // 4 bytes on my machine
+     //std::cout << sizeof(int) << '\n';    // 4 bytes on my machine
 
     //==============
     //======== 4
     //==============
-    //     int number = 20;
-    //     std::cout << &number << '\n';
-    //     std::cout << number << '\n';
+   // int number = 20;
+    //std::cout << &number << '\n';
+    // std::cout << number << '\n';
 
     //==============
     //======== 5
@@ -67,8 +65,8 @@ int main() {
     //==============
     //======== 8
     //==============
-    // int number;                  // uninitialized
-    // std::cout << number << '\n'; // garbage
+   int number;                  // uninitialized
+   std::cout << number << '\n'; // garbage
 
     //==============
     //======== 9
@@ -189,11 +187,11 @@ int main() {
     //==============
     //======== 13
     //==============
-    // double num1 = 1.5;
-    // int num2 = num1;                                                // 1.5 converted to 1
-    // std::cout << "Value of num1 : " << num1 << '\n';                // 1.5
-    // std::cout << "Type of num1 : " << typeid(num1).name() << '\n';  // double
-    // std::cout << "Value of num2 : " << num2 << '\n';
+   //  double num1 = 1.7;
+     //int num2 = num1;                                                // 1.5 converted to 1
+     //std::cout << "Value of num1 : " << num1 << '\n';                // 1.5
+     //std::cout << "Type of num1 : " << typeid(num1).name() << '\n';  // double
+     //std::cout << "Value of num2 : " << num2 << '\n';
 
     //==============
     //======== 14-1
