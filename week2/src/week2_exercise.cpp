@@ -3,77 +3,76 @@
 
 int main() {
   //==============
-  //======== Exercise #2
+  //======== Exercise #2 
   //==============
-    int a;
+    /*int a{};
     int b = 3.2;
     int c(1.3);
-    int d{3.5};
+    int d {static_cast <int> (3.5)};
     std::cout << a << '\n';
     std::cout << b << '\n';
     std::cout << c << '\n';
     std::cout << d << '\n';
-
+*/
   //==============
-  //======== Exercise #3
+  //======== Exercise/#3
   //==============
-  //   int a{3};
-  //   int b{2};
-  //   std::cout << "Type of result: " << typeid(a / b).name() << '\n';
-  //   std::cout << "Type of result: " << typeid(a).name() << '\n';
-  //   std::cout << "Type of result: " << typeid(b).name() << '\n';
-  //   std::cout << "Value of result: " << a / b << '\n';
-
+  /*
+     double a{3};
+     int b{2};
+     std::cout << "Type of result: " << typeid(a / b).name() << '\n';
+     std::cout << "Type of result: " << typeid(a).name() << '\n';
+     std::cout << "Type of result: " << typeid(b).name() << '\n';
+     std::cout << "Value of result: " << a / b << '\n';
+*/
   //==============
   //======== Exercise #5
   //==============
-  //   std::cout << "Enter a number: ";
-  //   int user_input{};
-  //   std::cin >> user_input;
+  /*
+    std::cout << "Enter a number: ";
+    int user_input{};
+    std::cin >> user_input;
 
-  //   const int a;                  // Error 1: Fix this
-  //   constexpr int b{user_input};  // Error 2: Fix this
-  //   const int c{42};
-  //   c = 50;  // Error 3: Fix this
-
-  //   std::cout << a << " " << b << " " << c << '\n';
-
+  const int a {};                  // Error 1: Fix this
+  const int b{user_input};  // Error 2: Fix this
+  int c{42};
+  c = 50;  // Error 3: Fix this
+ std::cout << a << " " << b << " " << c << '\n';
+*/
+/*
   //==============
   //======== Exercise #6
   //==============
-  //   short s{10};
-  //   int i{20};
-  //   float f{3.5f};
-  //   double d{2.7};
+  short s{10};
+  int i{20};
+     float f{3.5f};
+     double d{2.7};
 
   //   // What type and value will these have?
-  //   auto result1{s + i};  // Type: _____ Value: _____
-  //   std::cout << "Type: " << typeid(result1).name() << ", Value: " << result1
-  //             << '\n';
+   auto result1{s + i};  // Type: int_____ Value: _30____
+    std::cout << "Type: " << typeid(result1).name() << ", Value: " << result1 << '\n';
 
-  //   auto result2{i * f};  // Type: _____ Value: _____
-  //   std::cout << "Type: " << typeid(result2).name() << ", Value: " << result2
+    auto result2{i * f};  // Type: lfoat_____ Value: 70_____
+  std::cout << "Type: " << typeid(result2).name() << ", Value: " << result2 << '\n';
+   auto result3{f / d};  // Type: double_____ Value: _1.3____
+  std::cout << "Type: " << typeid(result3).name() << ", Value: " << result3 << '\n';
+  auto result4{s + 5.0};  // Type: _d____ Value: 15_____
+  std::cout << "Type: " << typeid(result4).name() << ", Value: " << result4;
   //             << '\n';
-  //   auto result3{f / d};  // Type: _____ Value: _____
-  //   std::cout << "Type: " << typeid(result3).name() << ", Value: " << result3
-  //             << '\n';
-  //   auto result4{s + 5.0};  // Type: _____ Value: _____
-  //   std::cout << "Type: " << typeid(result4).name() << ", Value: " << result4
-  //             << '\n';
-
+*/
   //==============
   //======== Exercise #7
   //==============
-//   int x{10};
-//   std::cout << x << '\n';  // Output?
+  int x{10};
+  std::cout << x << '\n';  // Output 10
+ int y{};
+  {
+    int y{20};
+    int x{30};
+    std::cout << x << '\n';  // Output 30
+    std::cout << y << '\n';  // Output 20
+  }
 
-//   {
-//     int y{20};
-//     int x{30};
-//     std::cout << x << '\n';  // Output?
-//     std::cout << y << '\n';  // Output?
-//   }
-
-//   std::cout << x << '\n';  // Output?
-//   std::cout << y << '\n';  // Output?
+  std::cout << x << '\n';  // Output 10
+  std::cout << y << '\n';  // Output none
 }

@@ -15,17 +15,34 @@
 
 int main() {
 
+ 
+/*
   //======== 1
   int a{10};
-  int *p{&a};
+  int *p{nullptr};
 
   // Modify the value of a through p
-  *p = 20;
+ // *p = 20;
 
-  std::cout << a << '\n';  // 20
-  std::cout << *p << '\n'; // 20
+  std::cout << typeid(p).name() << '\n';  // 20
+  std::cout << p << '\n'; // 20
+  
+  int a{10};
+int *p1{&a};
+int *p2{nullptr};
+if (p1!=p2)
+std::cout << "p1 is not null\n";
+else
+std::cout << "p1 is null\n";
+std::cout << p2<< '\n';
 
-  // //======== 2-1
+int* p{new int{15}};
+std::cout << p << '\n'; // 0x55555556b2b0
+delete p;
+std::cout << p << '\n'; // 0x55555556b2b0
+std::cout << *p << '\n';// UB
+
+  // //======== 2-1)
   // int a{10};
   // int *p{&a};
 
@@ -105,4 +122,5 @@ int main() {
   // int *p3{p2};
   // ref = 50;
   // delete p3;
+  */
 }

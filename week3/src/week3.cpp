@@ -15,10 +15,10 @@
 
 int main() {
   // //======== 1
-  // int a{10};
-  // int *p{&a};
-  // std::cout << &a << '\n';
-  // std::cout << p << '\n';
+  int a{10};
+  int *p{&a};
+  std::cout << &a << '\n';
+  std::cout << p << '\n';
 
   // //======== 2
   // int a{10};
