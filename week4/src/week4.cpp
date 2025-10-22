@@ -510,20 +510,20 @@ int main()
 
     //</> 32 -- C++ arrays
     //=====================
-    // std::array<std::array<std::array<int, 3>, 2>, 3> numbers{{{{{1, 2, 3}, {4, 5, 6}}},
-    //                                                           {{{7, 8, 9}, {10, 11, 12}}},
-    //                                                           {{{13, 14, 15}, {16, 17, 18}}}}};
+    std::array<std::array<std::array<int, 3>, 2>, 3> numbers{{{{{1, 2, 3}, {4, 5, 6}}},
+                                                              {{{7, 8, 9}, {10, 11, 12}}},
+                                                              {{{13, 14, 15}, {16, 17, 18}}}}};
 
-    // // parse numbers
-    // for (int i = 0; i < 3; i++) {
-    //     for (int j = 0; j < 2; j++) {
-    //         for (int k = 0; k < 3; k++) {
-    //             std::cout << numbers[i][j][k];
-    //         }
-    //         std::cout << '\n';
-    //     }
-    //     std::cout << '\n';
-    // }
+    // parse numbers
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 2; j++) {
+            for (int k = 0; k < 3; k++) {
+                std::cout << numbers[i][j][k];
+            }
+            std::cout << '\n';
+        }
+        std::cout << '\n';
+    }
 
     //</> 33
     //=====================
